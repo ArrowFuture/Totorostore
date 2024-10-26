@@ -1,0 +1,160 @@
+body {
+    background: linear-gradient(135deg, #204051, #204051);
+    background: linear-gradient(135deg, #a8dba8, #79bd9a, #3b8686, #204051);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+}
+
+.navbar {
+    background: linear-gradient(135deg, #204051, #204051);
+    background: linear-gradient(135deg, #a8dba8, #79bd9a, #3b8686, #204051);
+}
+
+.nav-link {
+    color: white;
+}
+
+#inicio {
+    text-align: center;
+    padding: 150px 0;
+    color: white;
+    border-radius: 0;
+    margin-top: 0;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Transición suave para el botón */
+.boto-maestro {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #8dc26f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boto-maestro:hover {
+    background-color: #76b852;
+    color: #f4d03f;
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    padding: 50px 0;
+    color: white;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.sobre-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+}
+
+.sobre-item {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#sobre-nosotros h2 {
+    text-align: center;
+}
+
+/* Sección Productos */
+#productos {
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    margin: 20px 0;
+}
+
+.producto-item {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.producto-item:hover {
+    transform: scale(1.05);
+}
+
+.producto-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+/* Sección Servicios */
+#servicios {
+    padding: 50px 0;
+    color: #333;
+    text-align: center;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.servicio-item {
+    background: linear-gradient(135deg, rgba(255, 255, 204, 0.8), rgba(204, 255, 255, 0.8));
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.servicio-item {
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+
+/* Sección Footer */
+footer {
+    background: #204051; /* Color de fondo del footer */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 20px 0; /* Espaciado vertical */
+    position: relative; /* Permite el uso de 'absolute' en elementos hijos si es necesario */
+    bottom: 0; /* Coloca el footer en la parte inferior */
+    width: 100%; /* Asegura que el footer ocupe el ancho completo */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen por defecto */
+    font-size: 14px; /* Tamaño de fuente */
+}
